@@ -1,11 +1,14 @@
 // ==UserScript==
 // @name         pxls.space
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Spread the love
 // @author       oralekin
 // @match        https://hot-potato.reddit.com/embed*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
+// @updateURL    https://github.com/GrayTurtles/r-place-pxls-template/raw/main/userscript.user.js
+// @downloadURL  https://github.com/GrayTurtles/r-place-pxls-template/raw/main/userscript.user.js
+// @homepageURL  https://github.com/GrayTurtles/r-place-pxls-template
 // @grant        none
 // ==/UserScript==
 if (window.top !== window.self) {
@@ -14,7 +17,7 @@ if (window.top !== window.self) {
         (function () {
             const i = document.createElement("img");
             i.src = "https://raw.githubusercontent.com/GrayTurtles/r-place-pxls-template/main/template.png";
-            i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 1000px;";
+            i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 2000px;";
             console.log(i);
             return i;
         })())
